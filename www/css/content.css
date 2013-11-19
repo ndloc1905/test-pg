@@ -1,0 +1,433 @@
+a {
+	text-decoration:none;	
+}
+
+div.page_title {
+	font-weight:bold;
+	font-size:120%;
+	border-bottom:solid 1px #ccc;
+	padding-bottom:10px;
+}
+
+div.location_content {
+	border-top:solid 1px #fff;
+	padding-top:10px;	
+}
+
+span.your_location {
+	color:#888;	
+}
+
+div#page_header input.location {
+	border:none;
+	width:170px;
+	background:none;
+	font-weight:bold;
+}
+
+div.your_location {
+	width:35%;	
+	float:left;
+	color:#878787;
+}
+
+div.text_location {
+	width:65%;	
+	float:right;
+}
+
+div.left_panel_menu ul li.active {
+	background:#75B3DE;
+}
+
+div.ui-content {
+	padding:10px;	
+}
+
+div.shopping_mall {
+	border-bottom:solid 1px #eee;	
+	border-top:solid 1px #ccc;
+	height:40px;
+	padding:10px 0;
+}
+
+div.shopping_mall_list {
+	padding: 0 10px 10px 10px;	
+}
+
+div.shopping_mall div.shopingmall_logo {
+	float:left;
+	width:50%;
+	height:40px;
+	position:relative;
+}
+
+div.shopping_mall div.distance {
+	float:left;
+	width:35%;
+	text-align:right;
+	height:40px;
+	position:relative;
+}
+
+div.shopping_mall div.detail {
+	float:right;
+	width:22px;
+	height:40px;
+	position:relative;
+}
+
+div.shopingmall_logo img ,div.shopping_mall div.detail img{
+	position: absolute;top:0;left:0;right:0;bottom:0;
+	margin:auto 0;
+}
+
+span.mall_open_time {
+	color:#888;
+}
+
+div.moreresult {
+	color:#ccc;
+	width:80%;
+	float:left;
+}
+
+div.left_panel_shopcenter {
+	background:#333;	
+	position:absolute;
+	bottom:46px;
+	left:0;
+	width:100%;
+	border-top:solid 1px #555;
+	
+}
+
+div.left_panel_shopheader {
+	color:#72B2DF;
+	font-weight:bold;
+	line-height:46px;
+	vertical-align:middle;
+	padding: 0 0 0 15px;
+}
+
+div.left_panel_shopmenu a.startsite {
+	display:block;
+	color:#fff;	
+	padding: 0 0 0 45px;
+	background:#222;
+	height:30px;
+	line-height:30px;
+	vertical-align:middle;
+	background:url(../images/ico_startsite.png) no-repeat 15px center;
+	border-top:solid 1px #000;
+	text-decoration:none;
+}
+
+div.left_panel_setting {
+	background:#333;	
+	height:46px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	border-top:solid 1px #555;
+	text-align:right;
+}
+
+div.left_panel_setting a {
+	height:37px;
+	width:100%;
+	padding:9px 0 0 0;
+	display:block;
+}
+
+div.left_panel_setting a img {
+	margin-right:20px;
+}
+
+div#shop_logo {
+	text-align:center;	
+}
+
+div#shop_logo_left {
+	text-align:left;	
+}
+
+div#shop_logo_left img {
+	max-height:40px;	
+}
+
+div#main_cate div.cate_logo {
+	background:#75B3DE;
+	width:130px;
+	height:68px;
+	position:relative;
+}
+
+div#main_cate li.service div.cate_logo {
+	background:#999;
+	width:130px;
+	height:68px;
+	position:relative;
+}
+
+div#main_cate div.cate_logo img {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	display:block;
+}
+
+div#main_cate ul {
+	list-style-type:none;
+}
+
+div#main_cate a {
+	text-decoration:none;	
+}
+
+div#main_cate ul li {
+	float:left;
+	padding:0 10px 20px 10px;
+}
+
+div#main_cate ul li:hover div.cate_logo,div#main_cate ul li.active div.cate_logo {
+	background:#333;
+	transition: background-color 0.5s ease;
+	-webkit-transition:background-color 0.5s ease;
+    -moz-transition:background-color 0.5s ease;
+    -ms-transition:background-color 0.5s ease;
+    -o-transition:background-color 0.5s ease;
+}
+
+div#main_cate div.cate_name {
+	height:20px;
+	width:120px;
+	background:#eee;
+	font-size:50%;
+	line-height:20px;
+	vertical-align:middle;
+	text-decoration:none;
+	padding:0 0 0 10px;
+}
+
+div#main_cate div.shop_cate_name {
+	height:20px;
+	width:130px;
+	background:#eee;
+	font-size:50%;
+	line-height:20px;
+	vertical-align:middle;
+	text-decoration:none;
+	padding:0;
+	text-align:center;
+}
+
+div.category_header {
+	background:#75B3DE;
+	padding:0;
+	position:relative;
+}
+
+div.category_header div.cate_name {
+	color:#fff;
+	font-weight:bold;
+	padding:6px 10px;
+	width:80%;
+	position:relative;
+	text-transform:uppercase;
+}
+
+div.category_header div.backbutton {
+	width:70px;
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+div.category_header div.backbutton a {
+	display:block;
+	height:32px;
+	line-height:32px;
+	vertical-align:middle;
+	text-decoration:none;
+	color:#000;
+	background:#EBEBEB;
+	border-left:solid 1px #fff;
+	text-align:center;
+	font-weight:normal;
+}
+
+div.category_list {
+	padding:0;	
+	background:#444;
+	
+}
+
+div.category_list div.cate_name {
+	background:#333;
+	color:#fff;
+	padding:3px 10px;	
+	width:100%;
+}
+
+div.category_item {
+	width:100%;	
+	position:relative;
+}
+
+div.shop_list {
+	width:100%;	
+	position:relative;
+	height:83px;
+	background:#444;
+}
+
+div.shop_list ul {
+	list-style-type:none;	
+	width:100%;
+	
+}
+
+div.shop_list div.shop_logo {
+	height:66px;	
+	position:relative;
+}
+
+div.shop_list div.shop_name {
+	height:17px;
+	position:relative;	
+	background:#eee;
+	line-height:17px;
+	vertical-align:middle;
+	font-size:70%;
+	text-decoration:none;
+	padding:0 0 0 5px;
+}
+
+div.shop_list ul li {
+	width:78px;
+	height:83px;
+	float:left;
+	border-left: 1px solid #666;
+	border-right: 1px solid #000;	
+	display:block;
+}
+
+div.shop_information div.shop_logo {
+	width:30%;
+	float:left;
+}
+
+div.shop_information div.shop_detail {
+	width:70%;
+	float:left;
+}
+
+div.shop_information div.shop_detail span.shop_detail_name {
+	font-weight:bold;
+	padding-bottom:5px;
+	display:block;
+}
+
+div.opening_time {
+	padding:0;	
+}
+
+div.opening_time .box_title {
+	background:#ddd;
+	font-weight:bold;
+	padding:10px;	
+}
+
+div.opening_time .box_content {
+	background:#333;
+	padding:10px;	
+	color:#fff;
+}
+
+div.table {
+	display: table;
+}
+
+div.row {
+	display: table-row;
+}
+
+div.cell {
+	display: table-cell;
+}
+
+div.opening_time div.box_content div.table{
+	width:100%;
+}
+
+div.opening_time div.box_content div.leftcell{
+	display:table-cell;
+	width:45%;	
+	padding:0;
+	color:#fff;
+}
+
+div.opening_time div.box_content div.rightcell{
+	display:table-cell;
+	width:55%;	
+	padding:0;
+	color:#fff;
+}
+
+div.link_website {
+	background:#ddd;
+	padding:0;
+}
+
+span.bgIconCall {
+	background:url(../images/icon_call.png) no-repeat left;
+	padding:0 0 0 21px;
+}
+
+span.bgIconView {
+	background:url(../images/icon_view.png) no-repeat left;
+	padding:0 0 0 27px;
+}
+
+div.call_website {
+	width:50%;
+	float:left;
+}
+
+div.view_website {
+	width:50%;
+	float:right;
+}
+
+div.call_website a {
+	display:block;
+	padding:10px;
+	text-align:center;
+	border-right:1px solid #bbb;
+}
+
+div.view_website a {
+	display:block;
+	padding:10px;
+	text-align:center;
+	border-left:1px solid #fff;
+}
+
+ul#service_list div.shop_logo {
+	background:#999;	
+}
+
+ul#service_list div.shop_logo img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: block;
+}

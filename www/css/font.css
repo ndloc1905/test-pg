@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Ekc';
+    src: url('../font/UnitWeb.eot');
+    src: url('../font/UnitWeb.eot?#iefix') format('embedded-opentype'),
+         url('../font/UnitWeb.woff') format('woff'),
+         url('../font/UnitWeb.ttf') format('truetype'),
+         url('../font/UnitWeb.svg#Bigla') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ekc';
+    src: url('../font/UnitWeb-Medium.eot');
+    src: url('../font/UnitWeb-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../font/UnitWeb-Medium.woff') format('woff'),
+         url('../font/UnitWeb-Medium.ttf') format('truetype'),
+         url('../font/UnitWeb-Medium.svg#Bigla') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}

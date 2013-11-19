@@ -1,0 +1,460 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>EKC</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="css/font.css" type="text/css" rel="stylesheet">
+    <link href="css/layout.css" type="text/css" rel="stylesheet">
+    <link href="css/content.css" type="text/css" rel="stylesheet">
+    <link href="css/jquery.mobile-1.3.2.css" type="text/css" rel="stylesheet">
+</head> 
+<body> 
+
+<!-- MAIN PAGE-->
+<div data-role="page" id="shoppingMallPage">
+	<div data-role="header" id="header">
+		<div class="menu"><a href="#left-panel"><img src="images/icon_menu.png" title="" alt="" /></a></div>
+        <div class="logo"><a  href="./index.html" rel="external"><img src="images/logo.png" title="" alt="" /></a></div>
+        <div class="search"><a href="#" id="search_button"><img src="images/icon_sreach.png" title="" alt="" /></a></div>
+	</div><!-- /header -->
+    <div data-role="content" id="search_box">
+    	<form action="#">
+    		<input type="search" name="search" id="searc-basic" value="" />
+        </form>
+    </div>
+    <div data-role="content" id="shop_logo">
+    	<img src="images/westside_logo_b.png" title="" alt="" />
+    </div>
+	<div data-role="content" id="main_cate">
+		<ul>
+            <li>
+                <a href="#angebot_mall" data-transition="slidefade">
+                    <div class="cate_logo">
+                        <img src="images/ico_angebot.png" title="" alt="" />
+                    </div>
+                    <div class="cate_name">
+                        Angebot
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#promotion_mall" data-transition="slidefade">
+                    <div class="cate_logo">
+                        <img src="images/ico_promotion.png" title="" alt="" />
+                    </div>
+                    <div class="cate_name">
+                        Aktionen & Promotionen
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#event_mall" data-transition="slidefade">
+                    <div class="cate_logo">
+                        <img src="images/ico_event.png" title="" alt="" />
+                    </div>
+                    <div class="cate_name">
+                        Veranstaltungen
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#shopaz_mall" data-transition="slidefade">
+                    <div class="cate_logo">
+                        <img src="images/ico_shop.png" title="" alt="" />
+                    </div>
+                    <div class="cate_name">
+                        Geschäfte A-Z
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#openingtime_mall" data-transition="slidefade">
+                    <div class="cate_logo">
+                        <img src="images/ico_opentime.png" title="" alt="" />
+                    </div>
+                    <div class="cate_name">
+                        Öffnungszeiten
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#contact_mall" data-transition="slidefade">
+                    <div class="cate_logo">
+                        <img src="images/ico_contact.png" title="" alt="" />
+                    </div>
+                    <div class="cate_name">
+                        Anreise / Kontakt
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-role="panel" id="left-panel" data-theme="none">
+        <div class="left_panel_header">MENÜ</div>
+        <div class="left_panel_menu">
+        	<ul>
+            	<li><a href="#angebot_mall" data-transition="slidefade">ANGEBOT</a></li>
+                <li><a href="#promotion_mall" data-transition="slidefade">AKTIONEN & PROMOTIONEN</a></li>
+                <li><a href="#event_mall" data-transition="slidefade">VERANSTALTUNGEN</a></li>
+                <li><a href="#shopaz_mall" data-transition="slidefade">GESCHÄFTE A-Z</a></li>
+                <li><a href="#openingtime_mall" data-transition="slidefade">ÖFFNUNGSZEITEN</a></li>
+                <li><a href="#contact_mall" data-transition="slidefade">ANREISE/KONTAKT</a></li>
+            </ul>
+        </div>
+        <div class="left_panel_shopcenter">
+        	<div class="left_panel_shopheader">EINKAUFSCENTREN</div>
+        	<div class="left_panel_shopmenu">
+                <a href="./index.html" rel="external"  class="startsite">Startseite</a>
+            </div>
+        
+        </div>
+        <div class="left_panel_setting">
+        	<a href="#"><img src="images/btnSetting.png" title="" alt="" /></a>
+        </div>
+    </div>
+</div>
+
+<!-- ANGEBOT PAGE-->
+<div data-role="page" id="angebot_mall">
+	<div data-role="header" id="header">
+		<div class="menu"><a href="#left-panel"><img src="images/icon_menu.png" title="" alt="" /></a></div>
+        <div class="logo"><a  href="./index.html" rel="external"><img src="images/logo.png" title="" alt="" /></a></div>
+        <div class="search"><a href="#" id="search_button"><img src="images/icon_sreach.png" title="" alt="" /></a></div>
+	</div><!-- /header -->
+    <div data-role="content" id="search_box">
+    	<form action="#">
+    		<input type="search" name="search" id="searc-basic" value="" />
+        </form>
+    </div>
+    <div data-role="content" id="shop_logo">
+    	<img src="images/westside_logo_b.png" title="" alt="" />
+    </div>
+	<div data-role="content" id="main_cate">
+		<ul id="main_cate_list">
+        </ul>
+    </div>
+    <div data-role="panel" id="left-panel" data-theme="none">
+        <div class="left_panel_header">MENÜ</div>
+        <div class="left_panel_menu">
+        	<ul>
+            	<li><a href="#angebot_mall" data-transition="slidefade">ANGEBOT</a></li>
+                <li><a href="#promotion_mall" data-transition="slidefade">AKTIONEN & PROMOTIONEN</a></li>
+                <li><a href="#event_mall" data-transition="slidefade">VERANSTALTUNGEN</a></li>
+                <li><a href="#shopaz_mall" data-transition="slidefade">GESCHÄFTE A-Z</a></li>
+                <li><a href="#openingtime_mall" data-transition="slidefade">ÖFFNUNGSZEITEN</a></li>
+                <li><a href="#contact_mall" data-transition="slidefade">ANREISE/KONTAKT</a></li>
+            </ul>
+        </div>
+        <div class="left_panel_shopcenter">
+        	<div class="left_panel_shopheader">EINKAUFSCENTREN</div>
+        	<div class="left_panel_shopmenu">
+                <a href="./index.html" rel="external"  class="startsite">Startseite</a>
+            </div>
+        
+        </div>
+        <div class="left_panel_setting">
+        	<a href="#"><img src="images/btnSetting.png" title="" alt="" /></a>
+        </div>
+    </div>
+</div>
+
+<!-- PROMOTION PAGE-->
+<div data-role="page" id="promotion_mall">
+	<div data-role="header" id="header">
+		<div class="menu"><a href="#left-panel"><img src="images/icon_menu.png" title="" alt="" /></a></div>
+        <div class="logo"><a  href="./index.html" rel="external"><img src="images/logo.png" title="" alt="" /></a></div>
+        <div class="search"><a href="#" id="search_button"><img src="images/icon_sreach.png" title="" alt="" /></a></div>
+	</div><!-- /header -->
+    <div data-role="content" id="search_box">
+    	<form action="#">
+    		<input type="search" name="search" id="searc-basic" value="" />
+        </form>
+    </div>
+    <div data-role="content" id="shop_logo">
+    	<img src="images/westside_logo_b.png" title="" alt="" />
+    </div>
+	<div data-role="content">
+    	<div class="cate_name">AKTIONEN & PROMOTIONEN</div>
+        <div class="backbutton"><a href="#" data-rel="back" >« zurück</a></div>
+    </div>
+    <div data-role="panel" id="left-panel" data-theme="none">
+        <div class="left_panel_header">MENÜ</div>
+        <div class="left_panel_menu">
+        	<ul>
+            	<li><a href="#angebot_mall" data-transition="slidefade">ANGEBOT</a></li>
+                <li><a href="#promotion_mall" data-transition="slidefade">AKTIONEN & PROMOTIONEN</a></li>
+                <li><a href="#event_mall" data-transition="slidefade">VERANSTALTUNGEN</a></li>
+                <li><a href="#shopaz_mall" data-transition="slidefade">GESCHÄFTE A-Z</a></li>
+                <li><a href="#openingtime_mall" data-transition="slidefade">ÖFFNUNGSZEITEN</a></li>
+                <li><a href="#contact_mall" data-transition="slidefade">ANREISE/KONTAKT</a></li>
+            </ul>
+        </div>
+        <div class="left_panel_shopcenter">
+        	<div class="left_panel_shopheader">EINKAUFSCENTREN</div>
+        	<div class="left_panel_shopmenu">
+                <a href="./index.html" rel="external"  class="startsite">Startseite</a>
+            </div>
+        
+        </div>
+        <div class="left_panel_setting">
+        	<a href="#"><img src="images/btnSetting.png" title="" alt="" /></a>
+        </div>
+    </div>
+</div>
+
+<!-- EVENT PAGE-->
+<div data-role="page" id="event_mall">
+	<div data-role="header" id="header">
+		<div class="menu"><a href="#left-panel"><img src="images/icon_menu.png" title="" alt="" /></a></div>
+        <div class="logo"><a  href="./index.html" rel="external"><img src="images/logo.png" title="" alt="" /></a></div>
+        <div class="search"><a href="#" id="search_button"><img src="images/icon_sreach.png" title="" alt="" /></a></div>
+	</div><!-- /header -->
+    <div data-role="content" id="search_box">
+    	<form action="#">
+    		<input type="search" name="search" id="searc-basic" value="" />
+        </form>
+    </div>
+    <div data-role="content" id="shop_logo">
+    	<img src="images/westside_logo_b.png" title="" alt="" />
+    </div>
+	<div data-role="content">
+    	<div class="cate_name">VERANSTALTUNGEN</div>
+        <div class="backbutton"><a href="#" data-rel="back" >« zurück</a></div>
+    </div>
+    <div data-role="panel" id="left-panel" data-theme="none">
+        <div class="left_panel_header">MENÜ</div>
+        <div class="left_panel_menu">
+        	<ul>
+            	<li><a href="#angebot_mall" data-transition="slidefade">ANGEBOT</a></li>
+                <li><a href="#promotion_mall" data-transition="slidefade">AKTIONEN & PROMOTIONEN</a></li>
+                <li><a href="#event_mall" data-transition="slidefade">VERANSTALTUNGEN</a></li>
+                <li><a href="#shopaz_mall" data-transition="slidefade">GESCHÄFTE A-Z</a></li>
+                <li><a href="#openingtime_mall" data-transition="slidefade">ÖFFNUNGSZEITEN</a></li>
+                <li><a href="#contact_mall" data-transition="slidefade">ANREISE/KONTAKT</a></li>
+            </ul>
+        </div>
+        <div class="left_panel_shopcenter">
+        	<div class="left_panel_shopheader">EINKAUFSCENTREN</div>
+        	<div class="left_panel_shopmenu">
+                <a href="./index.html" rel="external"  class="startsite">Startseite</a>
+            </div>
+        
+        </div>
+        <div class="left_panel_setting">
+        	<a href="#"><img src="images/btnSetting.png" title="" alt="" /></a>
+        </div>
+    </div>
+</div>
+
+<!-- SHOP A-Z PAGE-->
+<div data-role="page" id="shopaz_mall">
+	<div data-role="header" id="header">
+		<div class="menu"><a href="#left-panel"><img src="images/icon_menu.png" title="" alt="" /></a></div>
+        <div class="logo"><a  href="./index.html" rel="external"><img src="images/logo.png" title="" alt="" /></a></div>
+        <div class="search"><a href="#" id="search_button"><img src="images/icon_sreach.png" title="" alt="" /></a></div>
+	</div><!-- /header -->
+    <div data-role="content" id="search_box">
+    	<form action="#">
+    		<input type="search" name="search" id="searc-basic" value="" />
+        </form>
+    </div>
+    <div data-role="content" id="shop_logo">
+    	<img src="images/westside_logo_b.png" title="" alt="" />
+    </div>
+	<div data-role="content">
+    	<div class="cate_name">GESCHÄFTE A-Z</div>
+        <div class="backbutton"><a href="#" data-rel="back" >« zurück</a></div>
+        <div id="shopAZInfo"></div>
+    </div>
+    <div data-role="panel" id="left-panel" data-theme="none">
+        <div class="left_panel_header">MENÜ</div>
+        <div class="left_panel_menu">
+        	<ul>
+            	<li><a href="#angebot_mall" data-transition="slidefade">ANGEBOT</a></li>
+                <li><a href="#promotion_mall" data-transition="slidefade">AKTIONEN & PROMOTIONEN</a></li>
+                <li><a href="#event_mall" data-transition="slidefade">VERANSTALTUNGEN</a></li>
+                <li><a href="#shopaz_mall" data-transition="slidefade">GESCHÄFTE A-Z</a></li>
+                <li><a href="#openingtime_mall" data-transition="slidefade">ÖFFNUNGSZEITEN</a></li>
+                <li><a href="#contact_mall" data-transition="slidefade">ANREISE/KONTAKT</a></li>
+            </ul>
+        </div>
+        <div class="left_panel_shopcenter">
+        	<div class="left_panel_shopheader">EINKAUFSCENTREN</div>
+        	<div class="left_panel_shopmenu">
+                <a href="./index.html" rel="external"  class="startsite">Startseite</a>
+            </div>
+        
+        </div>
+        <div class="left_panel_setting">
+        	<a href="#"><img src="images/btnSetting.png" title="" alt="" /></a>
+        </div>
+    </div>
+</div>
+
+<!-- OPENING TIME PAGE-->
+<div data-role="page" id="openingtime_mall">
+	<div data-role="header" id="header">
+		<div class="menu"><a href="#left-panel"><img src="images/icon_menu.png" title="" alt="" /></a></div>
+        <div class="logo"><a  href="./index.html" rel="external"><img src="images/logo.png" title="" alt="" /></a></div>
+        <div class="search"><a href="#" id="search_button"><img src="images/icon_sreach.png" title="" alt="" /></a></div>
+	</div><!-- /header -->
+    <div data-role="content" id="search_box">
+    	<form action="#">
+    		<input type="search" name="search" id="searc-basic" value="" />
+        </form>
+    </div>
+    <div data-role="content" id="shop_logo">
+    	<img src="images/westside_logo_b.png" title="" alt="" />
+    </div>
+	<div data-role="content">
+    	<div class="cate_name">ÖFFNUNGSZEITEN</div>
+        <div class="backbutton"><a href="#" data-rel="back" >« zurück</a></div>
+        <div id="openningTimeInfo"></div>
+    </div>
+    <div data-role="panel" id="left-panel" data-theme="none">
+        <div class="left_panel_header">MENÜ</div>
+        <div class="left_panel_menu">
+        	<ul>
+            	<li><a href="#angebot_mall" data-transition="slidefade">ANGEBOT</a></li>
+                <li><a href="#promotion_mall" data-transition="slidefade">AKTIONEN & PROMOTIONEN</a></li>
+                <li><a href="#event_mall" data-transition="slidefade">VERANSTALTUNGEN</a></li>
+                <li><a href="#shopaz_mall" data-transition="slidefade">GESCHÄFTE A-Z</a></li>
+                <li><a href="#openingtime_mall" data-transition="slidefade">ÖFFNUNGSZEITEN</a></li>
+                <li><a href="#contact_mall" data-transition="slidefade">ANREISE/KONTAKT</a></li>
+            </ul>
+        </div>
+        <div class="left_panel_shopcenter">
+        	<div class="left_panel_shopheader">EINKAUFSCENTREN</div>
+        	<div class="left_panel_shopmenu">
+                <a href="./index.html" rel="external"  class="startsite">Startseite</a>
+            </div>
+        
+        </div>
+        <div class="left_panel_setting">
+        	<a href="#"><img src="images/btnSetting.png" title="" alt="" /></a>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT PAGE-->
+<div data-role="page" id="contact_mall">
+	<div data-role="header" id="header">
+		<div class="menu"><a href="#left-panel"><img src="images/icon_menu.png" title="" alt="" /></a></div>
+        <div class="logo"><a  href="./index.html" rel="external"><img src="images/logo.png" title="" alt="" /></a></div>
+        <div class="search"><a href="#" id="search_button"><img src="images/icon_sreach.png" title="" alt="" /></a></div>
+	</div><!-- /header -->
+    <div data-role="content" id="search_box">
+    	<form action="#">
+    		<input type="search" name="search" id="searc-basic" value="" />
+        </form>
+    </div>
+    <div data-role="content" id="shop_logo">
+    	<img src="images/westside_logo_b.png" title="" alt="" />
+    </div>
+	<div data-role="content">
+    	<div class="cate_name">ANREISE/KONTAKT</div>
+        <div class="backbutton"><a href="#" data-rel="back" >« zurück</a></div>
+        <div id="contactInfo"></div>
+    </div>
+    <div data-role="panel" id="left-panel" data-theme="none">
+        <div class="left_panel_header">MENÜ</div>
+        <div class="left_panel_menu">
+        	<ul>
+            	<li><a href="#angebot_mall" data-transition="slidefade">ANGEBOT</a></li>
+                <li><a href="#promotion_mall" data-transition="slidefade">AKTIONEN & PROMOTIONEN</a></li>
+                <li><a href="#event_mall" data-transition="slidefade">VERANSTALTUNGEN</a></li>
+                <li><a href="#shopaz_mall" data-transition="slidefade">GESCHÄFTE A-Z</a></li>
+                <li><a href="#openingtime_mall" data-transition="slidefade">ÖFFNUNGSZEITEN</a></li>
+                <li><a href="#contact_mall" data-transition="slidefade">ANREISE/KONTAKT</a></li>
+            </ul>
+        </div>
+        <div class="left_panel_shopcenter">
+        	<div class="left_panel_shopheader">EINKAUFSCENTREN</div>
+        	<div class="left_panel_shopmenu">
+                <a href="./index.html" rel="external"  class="startsite">Startseite</a>
+            </div>
+        
+        </div>
+        <div class="left_panel_setting">
+        	<a href="#"><img src="images/btnSetting.png" title="" alt="" /></a>
+        </div>
+    </div>
+</div>
+
+<!-- SERVICE PAGE-->
+<div data-role="page" id="service_mall">
+	<div data-role="header" id="header">
+		<div class="menu"><a href="#left-panel"><img src="images/icon_menu.png" title="" alt="" /></a></div>
+        <div class="logo"><a  href="./index.html" rel="external"><img src="images/logo.png" title="" alt="" /></a></div>
+        <div class="search"><a href="#" id="search_button"><img src="images/icon_sreach.png" title="" alt="" /></a></div>
+	</div><!-- /header -->
+    <div data-role="content" id="search_box">
+    	<form action="#">
+    		<input type="search" name="search" id="searc-basic" value="" />
+        </form>
+    </div>
+    <div data-role="content" id="shop_logo">
+    	<img src="images/westside_logo_b.png" title="" alt="" />
+    </div>
+	<div data-role="content" class="category_header">
+    	<div class="cate_name">SERVICES</div>
+        <div class="backbutton"><a href="#"  data-rel="back">« zurück</a></div>
+    </div>
+    <div data-role="content" class="category_list">
+    	<div class="category_item">
+            <div class="shop_list">
+            	<ul id="service_list">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="panel" id="left-panel" data-theme="none">
+        <div class="left_panel_header">MENÜ</div>
+        <div class="left_panel_menu">
+        	<ul>
+            	<li><a href="#angebot_mall" data-transition="slidefade">ANGEBOT</a></li>
+                <li><a href="#promotion_mall" data-transition="slidefade">AKTIONEN & PROMOTIONEN</a></li>
+                <li><a href="#event_mall" data-transition="slidefade">VERANSTALTUNGEN</a></li>
+                <li><a href="#shopaz_mall" data-transition="slidefade">GESCHÄFTE A-Z</a></li>
+                <li><a href="#openingtime_mall" data-transition="slidefade">ÖFFNUNGSZEITEN</a></li>
+                <li><a href="#contact_mall" data-transition="slidefade">ANREISE/KONTAKT</a></li>
+            </ul>
+        </div>
+        <div class="left_panel_shopcenter">
+        	<div class="left_panel_shopheader">EINKAUFSCENTREN</div>
+        	<div class="left_panel_shopmenu">
+                <a href="./index.html" rel="external"  class="startsite">Startseite</a>
+            </div>
+        
+        </div>
+        <div class="left_panel_setting">
+        	<a href="#"><img src="images/btnSetting.png" title="" alt="" /></a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>
+<script type="text/javascript" src="app/config.js"></script>
+<script type="text/javascript" src="app/lib.js"></script>
+<!--<script type="text/javascript" id="jsondata_online" src="http://ekc.business4you-webserver.ch/fileadmin/user_upload/json/data.js.gzip"></script>-->
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="app/shoppingmall.js"></script>
+<script type="text/javascript">
+	alert("&#$&^$%*^");
+	$.ajax({
+		url: 'http://ekc.business4you-webserver.ch/fileadmin/user_upload/json/data_cache.json',
+		type: 'GET',
+		dataType: 'json',
+		error : function (){}, 
+		success: function (data) {
+			//alert(JSON.stringify(data));
+			json_data = data;
+			if(typeof json_data != 'undefined'){
+				window.localStorage.setItem( 'json_data',JSON.stringify(json_data) );
+			}
+		}
+	});
+</script>
+</body>
+</html>
