@@ -4,15 +4,13 @@
 	<title>EKC</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link href="css/font.css" type="text/css" rel="stylesheet">
+     <link href="css/font.css" type="text/css" rel="stylesheet">
     <link href="css/layout.css" type="text/css" rel="stylesheet">
     <link href="css/content.css" type="text/css" rel="stylesheet">
     <link href="css/jquery.mobile-1.3.2.css" type="text/css" rel="stylesheet">
-	<script src="js/jquery-1.10.2.min.js"></script>
-	<script src="js/jquery.mobile-1.3.2.min.js"></script>
-    <script src="js/main.js"></script>
-</head> 
+   	</head> 
 <body> 
+<div id="loading"><img src="images/loading.gif"/></div>
 <!-- MAIN PAGE-->
 <div data-role="page" id="index">
 	<div data-role="header" id="header">
@@ -21,27 +19,21 @@
         <div class="search"><a href="#" id="search_button"><img src="images/icon_sreach.png" title="" alt="" /></a></div>
 	</div><!-- /header -->
     <div data-role="content" id="search_box">
-    	<form action="#">
-    		<input type="search" name="search" id="searc-basic" value="" />
-        </form>
+    	<input type="text" name="search" id="searc-basic" class="search-store" value="" />
+    	<div class="container-shop-found"><ul id="searchAutocomplete"></ul></div>
     </div>
     
 	<div data-role="content" id="page_header" data-theme="none">
             <div class="page_title">Einkaufscenter in Ihrer Nähe</div>		
             <div class="location_content">
-            	<div class="your_location">Ihr Standort:</div>
+            	<div class="your_location">Ihr Standort: <span></span> <input type="text" class="location" data-role="none" value="Schönbühl"/> </div>
              	<div class="text_location">
-                	<div class="fl">
-                		<input type="text" class="location" data-role="none" value="Schönbühl"/> 
-                    </div>
-                    <div class="fr">
-                    	<a href="#" id="clearDetectLocation"><img src="images/btn_clear.png" title="" alt="" /></a>
-                    </div>
+                    	<a href="javascript:;" id="clearDetectLocation"><img src="images/btn_clear.png" title="" alt="" /></a>
                 </div>
             </div>
     </div>
-    <div data-role="content">
-         <div >
+    <div data-role="content" id="on-off-block">
+         <div class="activate-deactivate">
          	<div class="fl bluetext">Alle anzeigen</div>
             <div class="fr">
             	<select name="flip-1" id="flip-1" data-role="slider" data-theme="none" data-mini="true">
@@ -51,7 +43,7 @@
             </div>
         </div>
         <br class="clear" />
-        <div>
+        <div class="filter">
             <div class="fl bluetext">Jetzt geöfnet</div>
             <div class="fr">
             	<select name="flip-2" id="flip-2" data-role="slider" data-theme="none" data-mini="true">
@@ -62,7 +54,8 @@
          </div>
        <br class="clear" />
  	</div>
-    <div data-role="content" class="shopping_mall_list">
+    <div data-role="content" class="shopping_mall_list" id="shopping_mall_list">
+        <!--
         <div class="shopping_mall">
         	<a href="./shoppingmall.html?id=20" rel="external" data-transition="slidefade">
               <div class="shopingmall_logo"><img src="images/shoppyland_logo.png" title="" alt="" height="40px"/></div>
@@ -84,10 +77,10 @@
               <div class="detail"><img src="images/btn_arrow_right.png" title="" alt="" /></div>
             </a>            
         </div>
-        
+        -->
     </div> 
-    <div data-role="content" class="viewmore"  >
-       	<a href="#" rel="external" data-transition="slidefade">
+    <div data-role="content" class="viewmore">
+       	<a href="javascript:;" rel="external" data-transition="slidefade">
         	<div class="moreresult">Weitere Ergebnisse</div>
           	<div class="fr"><img src="images/btn_arrow_down.png" title="" alt="" /></div>
         </a>
@@ -97,9 +90,18 @@
         <div class="left_panel_menu">
         	<ul>
             	<li ><a href="#index" data-transition="slidefade">EINKAUFSCENTREN</a></li>
-                <li><a href="#promotionList" data-transition="slidefade">AKTIONEN & PROMOTIONEN</a></li>
-                <li><a href="#eventList" data-transition="slidefade">VERANSTALTUNGEN</a></li>
-                <li><a href="#shopAZ" data-transition="slidefade">GESCHÄFTE A-Z</a></li>
+                <li><a href="#promotionList" data-transition="slidefade">Westside</a></li>
+                <li><a href="#eventList" data-transition="slidefade">Shoppiland</a></li>
+                <li><a href="#shopAZ" data-transition="slidefade">Panorama Center</a></li>
+                <li><a href="#promotionList" data-transition="slidefade">Zentrum Oberland</a></li>
+                <li><a href="#eventList" data-transition="slidefade">Gäupark</a></li>
+                <li><a href="#shopAZ" data-transition="slidefade">Centre Brügg</a></li>
+                <li><a href="#promotionList" data-transition="slidefade">Wynecenter Buchs</a></li>
+                <li><a href="#eventList" data-transition="slidefade">Ladedorf</a></li>
+                <li><a href="#shopAZ" data-transition="slidefade">Lyssbachpark</a></li>
+                <li><a href="#promotionList" data-transition="slidefade">Sälipark</a></li>
+                <li><a href="#eventList" data-transition="slidefade">Müli Märt</a></li>
+                <li><a href="#shopAZ" data-transition="slidefade">Weitere EKCs</a></li>
             </ul>
         </div>
         <div class="left_panel_setting">
@@ -117,9 +119,8 @@
         <div class="search"><a href="#" id="search_button"><img src="images/icon_sreach.png" title="" alt="" /></a></div>
 	</div><!-- /header -->
     <div data-role="content" id="search_box">
-    	<form action="#">
-    		<input type="search" name="search" id="searc-basic" value="" />
-        </form>
+    	<input type="text" name="search" id="searc-basic" class="search-store" value="" />
+    	<div class="container-shop-found"><ul id="searchAutocomplete"></ul></div>
     </div>
     <div data-role="content">
     	<div class="cate_name">AKTIONEN & PROMOTIONEN</div>
@@ -150,9 +151,8 @@
         <div class="search"><a href="#" id="search_button"><img src="images/icon_sreach.png" title="" alt="" /></a></div>
 	</div><!-- /header -->
     <div data-role="content" id="search_box">
-    	<form action="#">
-    		<input type="search" name="search" id="searc-basic" value="" />
-        </form>
+    	<input type="text" name="search" id="searc-basic" class="search-store" value="" />
+    	<div class="container-shop-found"><ul id="searchAutocomplete"></ul></div>
     </div>
     <div data-role="content">
     	<div class="cate_name">VERANSTALTUNGEN</div>
@@ -183,9 +183,8 @@
         <div class="search"><a href="#" id="search_button"><img src="images/icon_sreach.png" title="" alt="" /></a></div>
 	</div><!-- /header -->
     <div data-role="content" id="search_box">
-    	<form action="#">
-    		<input type="search" name="search" id="searc-basic" value="" />
-        </form>
+    	<input type="text" name="search" id="searc-basic" class="search-store" value="" />
+    	<div class="container-shop-found"><ul id="searchAutocomplete"></ul></div>
     </div>
     <div data-role="content">
     	<div class="cate_name">GESCHÄFTE A-Z</div>
@@ -206,6 +205,11 @@
         </div>
 	</div>
 </div>
-
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/mobile.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

@@ -34,16 +34,22 @@ $(document).ready(function(){
 	$('a#search_button').click(function(){
 		$('div#search_box').slideToggle('fast');   	
 	});
-	
+	if(typeof google != 'undefined') {
+		google.maps.event.addDomListener(window, 'load', GeolocationService.initialize);
+	} else {
+		// Show shopping mall list
+		SMObj = new ShoppingMall();
+		SMObj.init();
+	}
 	//
-	$('input.location').focus(function(){
+	/*$('input.location').focus(function(){
 		if($(this).val().toLowerCase()!="")
 		$(this).val('');
 	});
 	
 	$('a#clearDetectLocation').click(function(){
 		$('input.location').val('');
-	});
+	});*/
 });
 
 $(document).on('pagebeforeshow', function() {

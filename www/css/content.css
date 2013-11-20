@@ -1,17 +1,33 @@
 a {
 	text-decoration:none;	
 }
+div#loading {
+	z-index: 1000000000001;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	display: none;
+}
+
+div#loading img {
+	vertical-align: middle;
+	margin-top: 65%;
+}
 
 div.page_title {
 	font-weight:bold;
-	font-size:120%;
+	font-size:130%;
 	border-bottom:solid 1px #ccc;
-	padding-bottom:10px;
+	padding-bottom:5px;
 }
 
 div.location_content {
 	border-top:solid 1px #fff;
-	padding-top:10px;	
+	padding-top:5px;	
 }
 
 span.your_location {
@@ -20,24 +36,41 @@ span.your_location {
 
 div#page_header input.location {
 	border:none;
-	width:170px;
+	width:150px;
 	background:none;
 	font-weight:bold;
 }
 
 div.your_location {
-	width:35%;	
+	margin-right: 5px;	
+	line-height:27px;
 	float:left;
 	color:#878787;
+	display: inline;
+	width:auto !important;
+}
+
+div.your_location span{
+	font-weight:bold;	
 }
 
 div.text_location {
-	width:65%;	
-	float:right;
+	width:27px;	
+	float: right;
+	text-align: left;
 }
 
+div.text_location div.fl {
+	float: left;
+}
+
+div.your_location input.location {
+	display: none;
+	border: 1px solid #ccc !important;
+}
+	
 div.left_panel_menu ul li.active {
-	background:#75B3DE;
+	background:#FF6600;
 }
 
 div.ui-content {
@@ -47,34 +80,106 @@ div.ui-content {
 div.shopping_mall {
 	border-bottom:solid 1px #eee;	
 	border-top:solid 1px #ccc;
-	height:40px;
-	padding:10px 0;
+	height:50px;
+	padding: 10px 0;
 }
 
 div.shopping_mall_list {
-	padding: 0 10px 10px 10px;	
+	padding: 0 10px 46px 10px;	
+}
+#searc-basic {
+	-webkit-appearance: none;
+	border-radius: 0;
 }
 
+ul#searchAutocomplete {
+	position: absolute;
+	width: 94%;
+	height: auto !important;
+	max-height: 100px !important;
+	overflow: hidden;
+	overflow-y: auto;
+	background: #fff;
+	list-style: none;
+	padding:0;
+	margin: 0;
+	margin-top: -8px !important;
+	z-index: 10000001;
+	border: 0px !important;
+	border-left: 0px solid #333 !important;
+	border-right: 0px solid #666 !important;
+	display: none;
+}
+ul#searchAutocomplete li {
+	color: #333;
+	text-align: left;
+	padding-left: 10px;
+	background: #fff;
+	line-height: 25px !important;
+	vertical-align:middle !important;
+	margin: 0;
+	border: none !important;
+	outline: none;
+	clear: both;
+	width: 100%;
+}
+ul#searchAutocomplete li:hover {
+	cursor: pointer;
+	background: #FF6600; /*73B6E6;*/
+	color: #fff;
+	text-align: left;
+	padding-left: 10px;
+	line-height: 25px !important;
+	vertical-align:middle !important;
+	margin: 0;
+	border: none !important;
+	outline: none;
+	width: 100%;
+}
+ul#searchAutocomplete li.active {
+	background: #FF6600; /*73B6E6;*/
+	color: #fff;
+	text-align: left;
+	padding-left: 10px;
+	line-height: 25px !important;
+	vertical-align:middle !important;
+	margin: 0;
+	border: none !important;
+	outline: none;
+	width: 100%;
+}
 div.shopping_mall div.shopingmall_logo {
 	float:left;
 	width:50%;
-	height:40px;
+	height:50px;
 	position:relative;
+}
+
+div.shopping_mall div.shopingmall_logo img{
+	max-height::50px;	
+	max-width:150px;
 }
 
 div.shopping_mall div.distance {
 	float:left;
 	width:35%;
 	text-align:right;
-	height:40px;
+	height:50px;
 	position:relative;
+}
+div.viewmore {
+	display: none;
 }
 
 div.shopping_mall div.detail {
 	float:right;
-	width:22px;
-	height:40px;
+	width:27px;
+	height:50px;
 	position:relative;
+}
+
+div.shopping_mall div.distance {
+	font-weight:bold;	
 }
 
 div.shopingmall_logo img ,div.shopping_mall div.detail img{
@@ -90,6 +195,7 @@ div.moreresult {
 	color:#ccc;
 	width:80%;
 	float:left;
+	line-height:27px;
 }
 
 div.left_panel_shopcenter {
@@ -126,9 +232,6 @@ div.left_panel_shopmenu a.startsite {
 div.left_panel_setting {
 	background:#333;	
 	height:46px;
-	position:absolute;
-	bottom:0;
-	left:0;
 	width:100%;
 	border-top:solid 1px #555;
 	text-align:right;
@@ -158,7 +261,7 @@ div#shop_logo_left img {
 }
 
 div#main_cate div.cate_logo {
-	background:#75B3DE;
+	background:#FF6600;
 	width:130px;
 	height:68px;
 	position:relative;
@@ -227,7 +330,7 @@ div#main_cate div.shop_cate_name {
 }
 
 div.category_header {
-	background:#75B3DE;
+	background:#FF6600;
 	padding:0;
 	position:relative;
 }
@@ -430,4 +533,8 @@ ul#service_list div.shop_logo img {
 	right: 0;
 	margin: auto;
 	display: block;
+}
+
+div#on-off-block{
+	padding:7px 10px;	
 }
