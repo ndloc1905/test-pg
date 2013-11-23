@@ -58,7 +58,7 @@ var SWIPEMODULE = (function(my, $, options){
 				$swipeItem: null
 			};
 
-			parent.constructor = function() {
+			parent.initiate = function() {
 				parent._dom.$swipeList = $this.find('.' + parent._setting.swipeList);
 				parent._dom.$swipeItem = $this.find('.' + parent._setting.swipeItem);
 				parent._dom.$swipeNav = $this.find('.' + parent._setting.swipeNav);
@@ -185,7 +185,7 @@ var SWIPEMODULE = (function(my, $, options){
 				$($navItem[position]).addClass(parent._setting.swipeNavActive);
 			}
 
-			parent.constructor();
+			parent.initiate();
 	
 			parent._touchMethod = {
 				handleEvent: function(event) {

@@ -3,281 +3,208 @@
 	<head> 
 	<title>My Page</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<link href="css/layout.css" type="text/css" rel="stylesheet">
-		<link href="css/content.css" type="text/css" rel="stylesheet">
-		<link href="css/jquery.mobile-1.3.2.css" type="text/css" rel="stylesheet">
-		<script src="js/jquery-1.10.2.min.js"></script>
-		<script src="js/jquery.mobile-1.3.2.min.js"></script>
-		<script src="js/swipeModule.js"></script>
-		<script src="js/main.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="css/layout.css" type="text/css" rel="stylesheet">
+    <link href="css/content.css" type="text/css" rel="stylesheet">
+    <link href="css/jquery.mobile-1.3.2.css" type="text/css" rel="stylesheet">
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery.mobile-1.3.2.min.js"></script>
+    <script src="js/main.js"></script>
 </head> 
 <body> 
-<div id="container">
-<div data-role="page">
+<!-- MAIN PAGE-->
+<div data-role="page" id="index">
 	<div data-role="header" id="header">
 		<div class="menu"><a href="#left-panel"><img src="images/icon_menu.png" title="" alt="" /></a></div>
-				<div class="logo"><a  href="./index.html" rel="external"><img src="images/logo.png" title="" alt="" /></a></div>
-				<div class="search"><a href="#" id="search_button"><img src="images/icon_sreach.png" title="" alt="" /></a></div>
+        <div class="logo"><a href="./index.html"><img src="images/logo.png" title="" alt="" /></a></div>
+        <div class="search"><a href="#" id="search_button"><img src="images/icon_sreach.png" title="" alt="" /></a></div>
 	</div><!-- /header -->
-		<div data-role="content" id="search_box">
-			<form action="#">
-				<input type="search" name="search" id="searc-basic" value="" />
-				</form>
-		</div>
-		<div data-role="content" id="shop_logo_left" >
-			<img src="images/westside_logo_b.png" title="" alt="" />
-		</div>
-	<div data-role="content" class="category_header">
-			<div class="cate_name">SHOPPING</div>
-				<div class="backbutton"><a href="#"  data-rel="back">« zurück</a></div>
-		</div>
-		<div data-role="content" class="category_list">
-			<div class="category_item">
-					<div class="1 swipeContainer">
-						<div class="cate_name">Elektronik & Unterhaltung
-							<ul class="swipeNav"></ul>
-						</div>
-						<div class="shop_list">
-							<ul class="swipeList">
-											<li class="item">
-													<a href="./shop.html" rel="external" >
-															<div class="shop_logo">
-																	<img src="images/shop_chacha.jpg" title="" alt="" />
-															</div>
-															<div class="shop_name">
-																	Cha Cha
-															</div>
-													</a>
-											</li>
-											<li class="item">
-													<a  href="./shop.html" rel="external">
-															<div class="shop_logo">
-																	<img src="images/shop_nama.jpg" title="" alt="" />
-															</div>
-															<div class="shop_name">
-																Namamen    
-															</div>
-													</a>
-											</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<div class="category_item">
-						<div class="2 swipeContainer">
-						<div class="cate_name">Kleidung & Schuhe
-							<ul class="swipeNav"></ul>
-						</div>
-						<div class="shop_list">
-							<ul class="swipeList">
-											<li class="item">
-													<a href="#">
-															<div class="shop_logo">
-																	<img src="images/shop_bits.jpg" title="" alt="" width="78px" height="66px"  />
-															</div>
-															<div class="shop_name">
-																	Bits & Bites
-															</div>
-													</a>
-											</li>
-											<li class="item">
-													<a href="#">
-															<div class="shop_logo">
-																	<img src="images/shop_spiga.jpg" title="" alt="" width="78px" height="66px" />
-															</div>
-															<div class="shop_name">
-																Spiga    
-															</div>
-													</a>
-											</li>
-											<li class="item">
-													<a href="#">
-															<div class="shop_logo">
-																	<img src="images/shop_ny.jpg" title="" alt="" width="78px" height="66px" />
-															</div>
-															<div class="shop_name">
-																	NY Tea
-															</div>
-													</a>
-											</li>
-											<li class="item">
-													<a href="#">
-															<div class="shop_logo">
-																	<img src="images/shop_zum.jpg" title="" alt="" width="78px" height="66px" />
-															</div>
-															<div class="shop_name">
-																	NY Tea
-															</div>
-													</a>
-											</li>
-											<li class="item">
-													<a href="#">
-															<div class="shop_logo">
-																	<img src="images/shop_zum.jpg" title="" alt="" width="78px" height="66px" />
-															</div>
-															<div class="shop_name">
-																	NY Tea
-															</div>
-													</a>
-											</li>
-									</ul>
-						</div>
-						</div>
-				</div>
-				
-				
-				<div class="category_item">
-					<div class="3 swipeContainer">
-						<div class="cate_name">Kosmetik & Gesundheit
-							<ul class="swipeNav">
-							</ul>
-						</div>
-						<div class="shop_list">
-							<ul class="swipeList">
-											<li class="item">
-													<a href="#">
-															<div class="shop_logo">
-																	<img src="images/shop_chacha.jpg" title="" alt="" width="78px" height="66px" />
-															</div>
-															<div class="shop_name">
-																	Bits & Bites
-															</div>
-													</a>
-											</li>
-											<li class="item">
-													<a href="#">
-															<div class="shop_logo">
-																	<img src="images/shop_glat.jpg" title="" alt="" width="78px" height="66px" />
-															</div>
-															<div class="shop_name">
-																Glatz    
-															</div>
-													</a>
-											</li>
-											<li class="item">
-													<a href="#">
-															<div class="shop_logo">
-																	<img src="images/shop_migros.jpg" title="" alt="" width="78px" height="66px" />
-															</div>
-															<div class="shop_name">
-																	Migros Rest.
-															</div>
-													</a>
-											</li class="item">
-											<li class="item">
-													<a href="#">
-															<div class="shop_logo">
-																	<img src="images/shop_spiga.jpg" title="" alt="" width="78px" height="66px" />
-															</div>
-															<div class="shop_name">
-																	Spiga
-															</div>
-													</a>
-											</li>
-											<li class="item">
-													<a href="#">
-															<div class="shop_logo">
-																	<img src="images/shop_chacha.jpg" title="" alt="" width="78px" height="66px" />
-															</div>
-															<div class="shop_name">
-																	Bits & Bites
-															</div>
-													</a>
-											</li>
-											<li class="item">
-													<a href="#">
-															<div class="shop_logo">
-																	<img src="images/shop_glat.jpg" title="" alt="" width="78px" height="66px" />
-															</div>
-															<div class="shop_name">
-																Glatz    
-															</div>
-													</a>
-											</li>
-											<li class="item">
-													<a href="#">
-															<div class="shop_logo">
-																	<img src="images/shop_migros.jpg" title="" alt="" width="78px" height="66px" />
-															</div>
-															<div class="shop_name">
-																	Migros Rest.
-															</div>
-													</a>
-											</li>
-											<li class="item">
-													<a href="#">
-															<div class="shop_logo">
-																	<img src="images/shop_spiga.jpg" title="" alt="" width="78px" height="66px" />
-															</div>
-															<div class="shop_name">
-																	Spiga
-															</div>
-													</a>
-											</li>
+    <div data-role="content" id="search_box">
+    	<form action="#">
+    		<input type="search" name="search" id="searc-basic" value="" />
+        </form>
+    </div>
+    
+	<div data-role="content" id="page_header" data-theme="none">
+            <div class="page_title">Einkaufscenter in Ihrer Nähe</div>		
+            <div class="location_content">
+            	<div class="your_location">Ihr Standort:</div>
+             	<div class="text_location">
+                	<div class="fl">
+                		<input type="text" class="location" data-role="none" value="Schönbühl"/> 
+                    </div>
+                    <div class="fr">
+                    	<a href="#" id="clearDetectLocation"><img src="images/btn_clear.png" title="" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div data-role="content">
+         <div >
+         	<div class="fl bluetext">Alle anzeigen</div>
+            <div class="fr">
+            	<select name="flip-1" id="flip-1" data-role="slider" data-theme="none" data-mini="true">
+        			<option value="off">Off</option>
+        			<option value="on">On</option>
+    			</select>
+            </div>
+        </div>
+        <br class="clear" />
+        <div>
+            <div class="fl bluetext">Jetzt geöfnet</div>
+            <div class="fr">
+            	<select name="flip-2" id="flip-2" data-role="slider" data-theme="none" data-mini="true">
+        			<option value="off">Off</option>
+        			<option value="on">On</option>
+    			</select>
+            </div>
+         </div>
+       <br class="clear" />
+ 	</div>
+    <div data-role="content" class="shopping_mall_list">
+        <div class="shopping_mall">
+        	<a href="./shoppingmall.html" rel="external" data-transition="slidefade">
+              <div class="shopingmall_logo"><img src="images/shoppyland_logo.png" title="" alt="" height="40px"/></div>
+              <div class="distance">3.1 km <br> <span class="mall_open_time">9:00 - 19:00</span></div>
+              <div class="detail"><img src="images/btn_arrow_right.png" title="" alt="" /></div>
+            </a>
+        </div>
+        <div class="shopping_mall">
+        	<a href="./shoppingmall.html" rel="external" data-transition="slidefade" >
+              <div class="shopingmall_logo"><img src="images/westside_logo.png" title="" alt="" height="40px"/></div>
+              <div class="distance">18.2 km <br> <span class="mall_open_time">09:00 - 21:00</span></div>
+              <div class="detail"><img src="images/btn_arrow_right.png" title="" alt="" /></div>
+           	 </a>
+        </div>
+        <div class="shopping_mall">
+        	<a href="./shoppingmall.html" rel="external" data-transition="slidefade">
+              <div class="shopingmall_logo"><img src="images/Lyssbachpark_logo.png" title="" alt="" height="40px"/></div>
+              <div class="distance">22.6 km <br> <span class="mall_open_time">09:00 - 19:00</span></div>
+              <div class="detail"><img src="images/btn_arrow_right.png" title="" alt="" /></div>
+            </a>            
+        </div>
+        
+    </div> 
+    <div data-role="content" class="viewmore"  >
+       	<a href="#" rel="external" data-transition="slidefade">
+        	<div class="moreresult">Weitere Ergebnisse</div>
+          	<div class="fr"><img src="images/btn_arrow_down.png" title="" alt="" /></div>
+        </a>
+    </div>
+    <div data-role="panel" id="left-panel" data-theme="none">
+        <div class="left_panel_header">MENÜ</div>
+        <div class="left_panel_menu">
+        	<ul>
+            	<li ><a href="#index" data-transition="slidefade">EINKAUFSCENTREN</a></li>
+                <li><a href="#promotionList" data-transition="slidefade">AKTIONEN & PROMOTIONEN</a></li>
+                <li><a href="#eventList" data-transition="slidefade">VERANSTALTUNGEN</a></li>
+                <li><a href="#shopAZ" data-transition="slidefade">GESCHÄFTE A-Z</a></li>
+            </ul>
+        </div>
+        <div class="left_panel_setting">
+        	<a href="#"><img src="images/btnSetting.png" title="" alt="" /></a>
+        </div>
+	</div>
+</div>
 
-											<li class="item">
-													<a href="#">
-															<div class="shop_logo">
-																	<img src="images/shop_glat.jpg" title="" alt="" width="78px" height="66px" />
-															</div>
-															<div class="shop_name">
-																Glatz    
-															</div>
-													</a>
-											</li>
-											<li class="item">
-													<a href="#">
-															<div class="shop_logo">
-																	<img src="images/shop_migros.jpg" title="" alt="" width="78px" height="66px" />
-															</div>
-															<div class="shop_name">
-																	Migros Rest.
-															</div>
-													</a>
-											</li>
-											<li class="item">
-													<a href="#">
-															<div class="shop_logo">
-																	<img src="images/shop_spiga.jpg" title="" alt="" width="78px" height="66px" />
-															</div>
-															<div class="shop_name">
-																	Spiga
-															</div>
-													</a>
-											</li>
-								</ul>
-						</div>
-					</div>
-				</div>
-		</div>
-		
-		<div data-role="panel" id="left-panel" data-theme="none">
-				<div class="left_panel_header">MENÜ</div>
-				<div class="left_panel_menu">
-					<ul>
-							<li><a href="./shoppingmall.html#angebot_mall" rel="external">ANGEBOT</a></li>
-								<li><a href="./shoppingmall.html#promotion_mall"  rel="external">AKTIONEN & PROMOTIONEN</a></li>
-								<li><a href="./shoppingmall.html#event_mall"  rel="external">VERANSTALTUNGEN</a></li>
-								<li><a href="./shoppingmall.html#shopaz_mall"  rel="external">GESCHÄFTE A-Z</a></li>
-								<li><a href="./shoppingmall.html#openingtime_mall"  rel="external">ÖFFNUNGSZEITEN</a></li>
-								<li><a href="./shoppingmall.html#contact_mall"  rel="external">ANREISE/KONTAKT</a></li>
-						</ul>
-				</div>
-				<div class="left_panel_shopcenter">
-					<div class="left_panel_shopheader">EINKAUFSCENTREN</div>
-					<div class="left_panel_shopmenu">
-								<a href="./index.html" rel="external"  class="startsite">Startseite</a>
-						</div>
-				</div>
-				<div class="left_panel_setting">
-					<a href="#"><img src="images/btnSetting.png" title="" alt="" /></a>
-				</div>
-		</div>
+
+<!-- PROMOTION LIST PAGE-->
+<div data-role="page" id="promotionList">
+	<div data-role="header" id="header">
+		<div class="menu"><a href="#left-panel"><img src="images/icon_menu.png" title="" alt="" /></a></div>
+        <div class="logo"><a href="./index.html"><img src="images/logo.png" title="" alt="" /></a></div>
+        <div class="search"><a href="#" id="search_button"><img src="images/icon_sreach.png" title="" alt="" /></a></div>
+	</div><!-- /header -->
+    <div data-role="content" id="search_box">
+    	<form action="#">
+    		<input type="search" name="search" id="searc-basic" value="" />
+        </form>
+    </div>
+    <div data-role="content">
+    	<div class="cate_name">AKTIONEN & PROMOTIONEN</div>
+        <div class="backbutton"><a href="#" data-rel="back" >« zurück</a></div>
+    </div>
+    <div data-role="panel" id="left-panel" data-theme="none">
+        <div class="left_panel_header">MENÜ</div>
+        <div class="left_panel_menu">
+        	<ul>
+            	<li ><a href="#index" data-transition="slidefade">EINKAUFSCENTREN</a></li>
+                <li><a href="#promotionList" data-transition="slidefade">AKTIONEN & PROMOTIONEN</a></li>
+                <li><a href="#eventList" data-transition="slidefade">VERANSTALTUNGEN</a></li>
+                <li><a href="#shopAZ" data-transition="slidefade">GESCHÄFTE A-Z</a></li>
+            </ul>
+        </div>
+        <div class="left_panel_setting">
+        	<a href="#"><img src="images/btnSetting.png" title="" alt="" /></a>
+        </div>
+	</div>
 </div>
+
+
+<!-- EVENT LIST PAGE-->
+<div data-role="page" id="eventList">
+	<div data-role="header" id="header">
+		<div class="menu"><a href="#left-panel"><img src="images/icon_menu.png" title="" alt="" /></a></div>
+        <div class="logo"><a href="./index.html"><img src="images/logo.png" title="" alt="" /></a></div>
+        <div class="search"><a href="#" id="search_button"><img src="images/icon_sreach.png" title="" alt="" /></a></div>
+	</div><!-- /header -->
+    <div data-role="content" id="search_box">
+    	<form action="#">
+    		<input type="search" name="search" id="searc-basic" value="" />
+        </form>
+    </div>
+    <div data-role="content">
+    	<div class="cate_name">VERANSTALTUNGEN</div>
+        <div class="backbutton"><a href="#" data-rel="back" >« zurück</a></div>
+    </div>
+    <div data-role="panel" id="left-panel" data-theme="none">
+        <div class="left_panel_header">MENÜ</div>
+        <div class="left_panel_menu">
+        	<ul>
+            	<li ><a href="#index" data-transition="slidefade">EINKAUFSCENTREN</a></li>
+                <li><a href="#promotionList" data-transition="slidefade">AKTIONEN & PROMOTIONEN</a></li>
+                <li><a href="#eventList" data-transition="slidefade">VERANSTALTUNGEN</a></li>
+                <li><a href="#shopAZ" data-transition="slidefade">GESCHÄFTE A-Z</a></li>
+            </ul>
+        </div>
+        <div class="left_panel_setting">
+        	<a href="#"><img src="images/btnSetting.png" title="" alt="" /></a>
+        </div>
+	</div>
 </div>
-		
+
+
+<!-- SHOP A-Z PAGE-->
+<div data-role="page" id="shopAZ">
+	<div data-role="header" id="header">
+		<div class="menu"><a href="#left-panel"><img src="images/icon_menu.png" title="" alt="" /></a></div>
+        <div class="logo"><a href="./index.html"><img src="images/logo.png" title="" alt="" /></a></div>
+        <div class="search"><a href="#" id="search_button"><img src="images/icon_sreach.png" title="" alt="" /></a></div>
+	</div><!-- /header -->
+    <div data-role="content" id="search_box">
+    	<form action="#">
+    		<input type="search" name="search" id="searc-basic" value="" />
+        </form>
+    </div>
+    <div data-role="content">
+    	<div class="cate_name">GESCHÄFTE A-Z</div>
+        <div class="backbutton"><a href="#" data-rel="back" >« zurück</a></div>
+    </div>
+    <div data-role="panel" id="left-panel" data-theme="none">
+        <div class="left_panel_header">MENÜ</div>
+        <div class="left_panel_menu">
+        	<ul>
+            	<li ><a href="#index" data-transition="slidefade">EINKAUFSCENTREN</a></li>
+                <li><a href="#promotionList" data-transition="slidefade">AKTIONEN & PROMOTIONEN</a></li>
+                <li><a href="#eventList" data-transition="slidefade">VERANSTALTUNGEN</a></li>
+                <li><a href="#shopAZ" data-transition="slidefade">GESCHÄFTE A-Z</a></li>
+            </ul>
+        </div>
+        <div class="left_panel_setting">
+        	<a href="#"><img src="images/btnSetting.png" title="" alt="" /></a>
+        </div>
+	</div>
+</div>
 
 </body>
 </html>
